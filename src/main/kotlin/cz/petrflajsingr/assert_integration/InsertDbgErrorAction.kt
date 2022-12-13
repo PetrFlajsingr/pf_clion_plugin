@@ -1,4 +1,4 @@
-package cz.petrflajsingr.assert_integration.pf_assert_integration
+package cz.petrflajsingr.assert_integration
 
 class InsertDbgErrorAction : InsertErrorActionBase() {
     override fun getErrorName(): String {

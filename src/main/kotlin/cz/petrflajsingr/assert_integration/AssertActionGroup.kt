@@ -1,4 +1,4 @@
-package cz.petrflajsingr.assert_integration.pf_assert_integration
+package cz.petrflajsingr.assert_integration
 
 import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnActionEvent

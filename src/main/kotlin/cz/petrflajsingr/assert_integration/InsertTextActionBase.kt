@@ -1,4 +1,4 @@
-package cz.petrflajsingr.assert_integration.pf_assert_integration
+package cz.petrflajsingr.assert_integration
 
 import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnAction
@@ -7,7 +7,7 @@ import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.command.WriteCommandAction
 
 
-class InsertHexIdAction : AnAction {
+abstract class InsertTextActionBase : AnAction {
     constructor() : super()
 
     constructor(text: String?, description: String?) : super(text, description, null)
@@ -17,18 +17,23 @@ class InsertHexIdAction : AnAction {
         return ActionUpdateThread.EDT
     }
 
+    abstract fun getTextToInsert(): String
+
+    abstract fun getActionName(): String
+
     override fun actionPerformed(event: AnActionEvent) {
         val editor = event.getRequiredData(CommonDataKeys.EDITOR)
         val project = event.getRequiredData(CommonDataKeys.PROJECT)
         val document = editor.document
         val caret = editor.caretModel.primaryCaret
 
+
         WriteCommandAction
                 .writeCommandAction(project)
-                .withName("InsertID")
+                .withName(getActionName())
                 .withGlobalUndo()
                 .run<Exception> {
-                    document.insertString(caret.offset, generateRandomHexString())
+                    document.insertString(caret.offset, getTextToInsert())
                 }
     }
 
