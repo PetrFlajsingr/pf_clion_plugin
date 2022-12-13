@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d9ec5d5-f6b4-4bf3-9596-ed784e12e283" name="Changes" comment="Add assert actions">
+    <list default="true" id="0d9ec5d5-f6b4-4bf3-9596-ed784e12e283" name="Changes" comment="Remove redundant package name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/AssertActionGroup.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/AssertActionGroup.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/InsertAssertAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertAssertAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/InsertAssertActionBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertAssertActionBase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/InsertDbgErrorAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertDbgErrorAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/InsertDbgWarnAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertDbgWarnAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/InsertEnsureAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertEnsureAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/InsertErrorAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertErrorAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/InsertErrorActionBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertErrorActionBase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/InsertHexIdAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertHexIdAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/InsertStaticAssertAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertStaticAssertAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/InsertTextActionBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertTextActionBase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/InsertVerifyAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertVerifyAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/InsertWarnAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertWarnAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/pf_assert_integration/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/Utils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertAssertAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertAssertAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertDbgErrorAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertDbgErrorAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertDbgWarnAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertDbgWarnAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertEnsureAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertEnsureAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertErrorAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertErrorAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertStaticAssertAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertStaticAssertAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertVerifyAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/assert_integration/InsertVerifyAction.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +85,28 @@
       <recent name="cz.petrflajsingr.assert_integration.pf_assert_integration" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Run Plugin">
+  <component name="RunManager" selected="Gradle.pf_assert_integration [assemble]">
+    <configuration name="pf_assert_integration [assemble]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="build.gradle.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="pf_assert_integration" />
       <option name="filePath" value="$PROJECT_DIR$/build.gradle.kts" />
@@ -101,6 +114,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.Run Plugin" />
+      <item itemvalue="Gradle.pf_assert_integration [assemble]" />
+      <item itemvalue="Kotlin script (Beta).build.gradle.kts" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin script (Beta).build.gradle.kts" />
@@ -123,11 +141,19 @@
       <option name="project" value="LOCAL" />
       <updated>1670955881605</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Remove redundant package name">
+      <created>1670956157009</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670956157009</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add assert actions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add assert actions" />
+    <MESSAGE value="Remove redundant package name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove redundant package name" />
   </component>
 </project>

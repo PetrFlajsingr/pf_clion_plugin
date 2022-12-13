@@ -2,7 +2,7 @@ package cz.petrflajsingr.assert_integration
 
 class InsertErrorAction : InsertErrorActionBase() {
     override fun getErrorName(): String {
-        return "ERROR"
+        return "PF_ERROR"
     }
 
     override fun getActionName(): String {

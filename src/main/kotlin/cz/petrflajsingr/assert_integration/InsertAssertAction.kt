@@ -2,7 +2,7 @@ package cz.petrflajsingr.assert_integration
 
 class InsertAssertAction : InsertAssertActionBase() {
     override fun getAssertName(): String {
-        return "ASSERT"
+        return "PF_ASSERT"
     }
 
     override fun getActionName(): String {
