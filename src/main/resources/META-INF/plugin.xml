@@ -1,0 +1,82 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>cz.petrflajsingr.assert_integration.pf_assert_integration</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>pf_assert_integration</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="flajsingr@gmail.com" url="https://github.com/PetrFlajsingr/pf_imgui">PetrFlajsingr</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description>Generator for pf asserts and their IDs..................................</description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+    <actions>
+        <group id="cz.petrflajsingr.assert_integration.pf_assert_integration.AssertActionGroup"
+               class="cz.petrflajsingr.assert_integration.pf_assert_integration.AssertActionGroup"
+               text="Assert generation" description="Actions for generating asserts and their IDs">
+
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertHexIdAction"
+                    class="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertHexIdAction" text="Insert ID" description="Insert hex int ID used for pf asserts">
+                <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD0"/>
+            </action>
+            <action id="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertEnsureAction"
+                    class="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertEnsureAction"
+                    text="Insert ensure" description="Insert ensure with generated random ID">
+                <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD1"/>
+            </action>
+            <action id="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertAssertAction"
+                    class="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertAssertAction"
+                    text="Insert assert" description="Insert an assert with a unique ID">
+                <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD2"/>
+            </action>
+            <action id="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertVerifyAction"
+                    class="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertVerifyAction"
+                    text="Insert verify" description="Insert verify action with a unique ID">
+                <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD3"/>
+            </action>
+            <separator/>
+            <action id="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertDbgWarnAction"
+                    class="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertDbgWarnAction"
+                    text="Insert debug warn" description="Insert debug warning with a unique ID">
+                <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD4"/>
+            </action>
+            <action id="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertDbgErrorAction"
+                    class="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertDbgErrorAction"
+                    text="Insert debug error" description="Insert debug error with a unique ID">
+                <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD5"/>
+            </action>
+            <action id="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertWarnAction"
+                    class="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertWarnAction" text="Insert warning"
+                    description="Insert warning with a unique ID">
+                <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD6"/>
+            </action>
+            <action id="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertErrorAction"
+                    class="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertErrorAction" text="Insert error"
+                    description="Insert error with a unique ID">
+                <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD7"/>
+            </action>
+            <separator/>
+            <action id="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertStaticAssertAction"
+                    class="cz.petrflajsingr.assert_integration.pf_assert_integration.InsertStaticAssertAction"
+                    text="Insert static assert" description="Insert static assert with a unique ID">
+                <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD8"/>
+            </action>
+
+        </group>
+    </actions>
+</idea-plugin>
