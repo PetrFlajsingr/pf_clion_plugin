@@ -1,6 +1,8 @@
-package cz.petrflajsingr.clion_plugin
+package cz.petrflajsingr.clion_plugin.wrap_actions
 
-class WrapUnoptimizePragmaAction : WrapSelectionActionBase() {
+import cz.petrflajsingr.clion_plugin.base_actions.WrapSelectionAction
+
+class WrapUnoptimizePragmaAction : WrapSelectionAction() {
     override fun getWrapStart(): String {
         return """#pragma optimize( "", off ) """
     }

@@ -1,13 +1,14 @@
-package cz.petrflajsingr.clion_plugin
+package cz.petrflajsingr.clion_plugin.assert_actions
 
 import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.command.WriteCommandAction
+import cz.petrflajsingr.clion_plugin.generateRandomAssertID
 
 
-abstract class InsertTextActionBase : AnAction {
+class InsertHexIdAction : AnAction {
     constructor() : super()
 
     constructor(text: String?, description: String?) : super(text, description, null)
@@ -17,23 +18,18 @@ abstract class InsertTextActionBase : AnAction {
         return ActionUpdateThread.EDT
     }
 
-    abstract fun getTextToInsert(): String
-
-    abstract fun getActionName(): String
-
     override fun actionPerformed(event: AnActionEvent) {
         val editor = event.getRequiredData(CommonDataKeys.EDITOR)
         val project = event.getRequiredData(CommonDataKeys.PROJECT)
         val document = editor.document
         val caret = editor.caretModel.primaryCaret
 
-
         WriteCommandAction
                 .writeCommandAction(project)
-                .withName(getActionName())
+                .withName("InsertID")
                 .withGlobalUndo()
                 .run<Exception> {
-                    document.insertString(caret.offset, getTextToInsert())
+                    document.insertString(caret.offset, generateRandomAssertID())
                 }
     }
 

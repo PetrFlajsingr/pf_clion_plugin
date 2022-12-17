@@ -1,4 +1,4 @@
-package cz.petrflajsingr.clion_plugin
+package cz.petrflajsingr.clion_plugin.base_actions
 
 import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnAction
@@ -7,7 +7,7 @@ import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.command.WriteCommandAction
 
 
-abstract class WrapSelectionActionBase : AnAction {
+abstract class InsertTextAction : AnAction {
     constructor() : super()
 
     constructor(text: String?, description: String?) : super(text, description, null)
@@ -17,8 +17,7 @@ abstract class WrapSelectionActionBase : AnAction {
         return ActionUpdateThread.EDT
     }
 
-    abstract fun getWrapStart(): String
-    abstract fun getWrapEnd(): String
+    abstract fun getTextToInsert(): String
 
     abstract fun getActionName(): String
 
@@ -30,13 +29,12 @@ abstract class WrapSelectionActionBase : AnAction {
 
 
         WriteCommandAction
-            .writeCommandAction(project)
-            .withName(getActionName())
-            .withGlobalUndo()
-            .run<Exception> {
-                document.insertString(caret.selectionStart, getWrapStart() + '\n')
-                document.insertString(caret.selectionEnd, '\n' + getWrapEnd())
-            }
+                .writeCommandAction(project)
+                .withName(getActionName())
+                .withGlobalUndo()
+                .run<Exception> {
+                    document.insertString(caret.offset, getTextToInsert())
+                }
     }
 
     override fun update(e: AnActionEvent) {

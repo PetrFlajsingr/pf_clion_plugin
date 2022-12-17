@@ -1,4 +1,4 @@
-package cz.petrflajsingr.clion_plugin
+package cz.petrflajsingr.clion_plugin.assert_actions
 
 class InsertEnsureAction : InsertAssertActionBase() {
     override fun getAssertName(): String {

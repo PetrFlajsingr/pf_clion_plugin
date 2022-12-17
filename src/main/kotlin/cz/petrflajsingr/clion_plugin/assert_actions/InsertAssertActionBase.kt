@@ -1,9 +1,11 @@
-package cz.petrflajsingr.clion_plugin
+package cz.petrflajsingr.clion_plugin.assert_actions
 
 import com.intellij.openapi.actionSystem.AnActionEvent
+import cz.petrflajsingr.clion_plugin.base_actions.InsertTextAction
+import cz.petrflajsingr.clion_plugin.generateRandomAssertID
 
 
-abstract class InsertAssertActionBase : InsertTextActionBase() {
+abstract class InsertAssertActionBase : InsertTextAction() {
     abstract fun getAssertName(): String
 
     override fun getTextToInsert(): String {

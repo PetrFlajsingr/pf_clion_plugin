@@ -30,55 +30,55 @@
                text="Assert generation" description="Actions for generating asserts and their IDs">
 
             <add-to-group group-id="MainMenu" anchor="last"/>
-            <action id="cz.petrflajsingr.clion_plugin.InsertHexIdAction"
-                    class="cz.petrflajsingr.clion_plugin.InsertHexIdAction" text="Insert ID"
+            <action id="cz.petrflajsingr.clion_plugin.assert_actions.InsertHexIdAction"
+                    class="cz.petrflajsingr.clion_plugin.assert_actions.InsertHexIdAction" text="Insert ID"
                     description="Insert hex int ID used for pf asserts">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD0"/>
             </action>
-            <action id="cz.petrflajsingr.clion_plugin.InsertEnsureAction"
-                    class="cz.petrflajsingr.clion_plugin.InsertEnsureAction"
+            <action id="cz.petrflajsingr.clion_plugin.assert_actions.InsertEnsureAction"
+                    class="cz.petrflajsingr.clion_plugin.assert_actions.InsertEnsureAction"
                     text="Insert ensure" description="Insert ensure with generated random ID">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD1"/>
             </action>
-            <action id="cz.petrflajsingr.clion_plugin.InsertAssertAction"
-                    class="cz.petrflajsingr.clion_plugin.InsertAssertAction"
+            <action id="cz.petrflajsingr.clion_plugin.assert_actions.InsertAssertAction"
+                    class="cz.petrflajsingr.clion_plugin.assert_actions.InsertAssertAction"
                     text="Insert assert" description="Insert an assert with a unique ID">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD2"/>
             </action>
-            <action id="cz.petrflajsingr.clion_plugin.InsertVerifyAction"
-                    class="cz.petrflajsingr.clion_plugin.InsertVerifyAction"
+            <action id="cz.petrflajsingr.clion_plugin.assert_actions.InsertVerifyAction"
+                    class="cz.petrflajsingr.clion_plugin.assert_actions.InsertVerifyAction"
                     text="Insert verify" description="Insert verify action with a unique ID">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD3"/>
             </action>
             <separator/>
-            <action id="cz.petrflajsingr.clion_plugin.InsertDbgWarnAction"
-                    class="cz.petrflajsingr.clion_plugin.InsertDbgWarnAction"
+            <action id="cz.petrflajsingr.clion_plugin.assert_actions.InsertDbgWarnAction"
+                    class="cz.petrflajsingr.clion_plugin.assert_actions.InsertDbgWarnAction"
                     text="Insert debug warn" description="Insert debug warning with a unique ID">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD4"/>
             </action>
-            <action id="cz.petrflajsingr.clion_plugin.InsertDbgErrorAction"
-                    class="cz.petrflajsingr.clion_plugin.InsertDbgErrorAction"
+            <action id="cz.petrflajsingr.clion_plugin.assert_actions.InsertDbgErrorAction"
+                    class="cz.petrflajsingr.clion_plugin.assert_actions.InsertDbgErrorAction"
                     text="Insert debug error" description="Insert debug error with a unique ID">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD5"/>
             </action>
-            <action id="cz.petrflajsingr.clion_plugin.InsertWarnAction"
-                    class="cz.petrflajsingr.clion_plugin.InsertWarnAction" text="Insert warning"
+            <action id="cz.petrflajsingr.clion_plugin.assert_actions.InsertWarnAction"
+                    class="cz.petrflajsingr.clion_plugin.assert_actions.InsertWarnAction" text="Insert warning"
                     description="Insert warning with a unique ID">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD6"/>
             </action>
-            <action id="cz.petrflajsingr.clion_plugin.InsertErrorAction"
-                    class="cz.petrflajsingr.clion_plugin.InsertErrorAction" text="Insert error"
+            <action id="cz.petrflajsingr.clion_plugin.assert_actions.InsertErrorAction"
+                    class="cz.petrflajsingr.clion_plugin.assert_actions.InsertErrorAction" text="Insert error"
                     description="Insert error with a unique ID">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD7"/>
             </action>
             <separator/>
-            <action id="cz.petrflajsingr.clion_plugin.InsertStaticAssertAction"
-                    class="cz.petrflajsingr.clion_plugin.InsertStaticAssertAction"
+            <action id="cz.petrflajsingr.clion_plugin.assert_actions.InsertStaticAssertAction"
+                    class="cz.petrflajsingr.clion_plugin.assert_actions.InsertStaticAssertAction"
                     text="Insert static assert" description="Insert static assert with a unique ID">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD8"/>
             </action>
-            <action id="cz.petrflajsingr.clion_plugin.WrapUnoptimizePragmaAction"
-                    class="cz.petrflajsingr.clion_plugin.WrapUnoptimizePragmaAction"
+            <action id="cz.petrflajsingr.clion_plugin.wrap_actions.WrapUnoptimizePragmaAction"
+                    class="cz.petrflajsingr.clion_plugin.wrap_actions.WrapUnoptimizePragmaAction"
                     text="Disable optimization for selection"
                     description="Wrap currently selected text in pragma optimize"/>
 

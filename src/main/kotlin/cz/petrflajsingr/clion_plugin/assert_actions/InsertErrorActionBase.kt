@@ -1,9 +1,11 @@
-package cz.petrflajsingr.clion_plugin
+package cz.petrflajsingr.clion_plugin.assert_actions
 
 import com.intellij.openapi.actionSystem.AnActionEvent
+import cz.petrflajsingr.clion_plugin.base_actions.InsertTextAction
+import cz.petrflajsingr.clion_plugin.generateRandomAssertID
 
 
-abstract class InsertErrorActionBase : InsertTextActionBase() {
+abstract class InsertErrorActionBase : InsertTextAction() {
 
     abstract fun getErrorName(): String
 
