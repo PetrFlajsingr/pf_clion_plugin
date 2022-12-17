@@ -77,6 +77,10 @@
                     text="Insert static assert" description="Insert static assert with a unique ID">
                 <keyboard-shortcut keymap="$default" first-keystroke="alt NUMPAD8"/>
             </action>
+            <action id="cz.petrflajsingr.assert_integration.WrapUnoptimizePragmaAction"
+                    class="cz.petrflajsingr.assert_integration.WrapUnoptimizePragmaAction"
+                    text="Disable optimization for selection"
+                    description="Wrap currently selected text in pragma optimize"/>
 
         </group>
     </actions>
