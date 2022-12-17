@@ -1,4 +1,4 @@
-package cz.petrflajsingr.assert_integration
+package cz.petrflajsingr.clion_plugin
 
 class InsertStaticAssertAction : InsertTextActionBase() {
     override fun getTextToInsert(): String {

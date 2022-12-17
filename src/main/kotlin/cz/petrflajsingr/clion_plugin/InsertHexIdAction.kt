@@ -1,4 +1,4 @@
-package cz.petrflajsingr.assert_integration
+package cz.petrflajsingr.clion_plugin
 
 import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnAction
@@ -7,7 +7,7 @@ import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.command.WriteCommandAction
 
 
-abstract class WrapSelectionActionBase : AnAction {
+class InsertHexIdAction : AnAction {
     constructor() : super()
 
     constructor(text: String?, description: String?) : super(text, description, null)
@@ -17,26 +17,19 @@ abstract class WrapSelectionActionBase : AnAction {
         return ActionUpdateThread.EDT
     }
 
-    abstract fun getWrapStart(): String
-    abstract fun getWrapEnd(): String
-
-    abstract fun getActionName(): String
-
     override fun actionPerformed(event: AnActionEvent) {
         val editor = event.getRequiredData(CommonDataKeys.EDITOR)
         val project = event.getRequiredData(CommonDataKeys.PROJECT)
         val document = editor.document
         val caret = editor.caretModel.primaryCaret
 
-
         WriteCommandAction
-            .writeCommandAction(project)
-            .withName(getActionName())
-            .withGlobalUndo()
-            .run<Exception> {
-                document.insertString(caret.selectionStart, getWrapStart() + '\n')
-                document.insertString(caret.selectionEnd, '\n' + getWrapEnd())
-            }
+                .writeCommandAction(project)
+                .withName("InsertID")
+                .withGlobalUndo()
+                .run<Exception> {
+                    document.insertString(caret.offset, generateRandomAssertID())
+                }
     }
 
     override fun update(e: AnActionEvent) {

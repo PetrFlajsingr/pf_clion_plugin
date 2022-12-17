@@ -1,4 +1,4 @@
-package cz.petrflajsingr.assert_integration
+package cz.petrflajsingr.clion_plugin
 
 import com.intellij.openapi.actionSystem.AnActionEvent
 
