@@ -8,7 +8,7 @@ abstract class InsertErrorActionBase : InsertTextActionBase() {
     abstract fun getErrorName(): String
 
     override fun getTextToInsert(): String {
-        return """%s(%s, Log::, "");""".format(getErrorName(), generateRandomHexString())
+        return """%s(%s, Log::, "");""".format(getErrorName(), generateRandomAssertID())
     }
 
     override fun update(e: AnActionEvent) {

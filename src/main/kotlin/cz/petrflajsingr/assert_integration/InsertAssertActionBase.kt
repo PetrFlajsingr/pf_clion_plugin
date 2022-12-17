@@ -7,7 +7,7 @@ abstract class InsertAssertActionBase : InsertTextActionBase() {
     abstract fun getAssertName(): String
 
     override fun getTextToInsert(): String {
-        return """%s(%s, (EXPRESSION), Log::, "");""".format(getAssertName(), generateRandomHexString())
+        return """%s(%s, (EXPRESSION), Log::, "");""".format(getAssertName(), generateRandomAssertID())
     }
     override fun update(e: AnActionEvent) {
         val project = e.project

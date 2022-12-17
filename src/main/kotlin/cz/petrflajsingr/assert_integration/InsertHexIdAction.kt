@@ -28,7 +28,7 @@ class InsertHexIdAction : AnAction {
                 .withName("InsertID")
                 .withGlobalUndo()
                 .run<Exception> {
-                    document.insertString(caret.offset, generateRandomHexString())
+                    document.insertString(caret.offset, generateRandomAssertID())
                 }
     }
 
