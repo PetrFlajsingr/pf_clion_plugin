@@ -25,9 +25,9 @@
 
     </extensions>
     <actions>
-        <group id="cz.petrflajsingr.clion_plugin.AssertActionGroup"
-               class="cz.petrflajsingr.clion_plugin.AssertActionGroup"
-               text="Assert generation" description="Actions for generating asserts and their IDs">
+        <group id="cz.petrflajsingr.clion_plugin.MainMenuActionGroup"
+               class="cz.petrflajsingr.clion_plugin.MainMenuActionGroup"
+               text="pfplugin" description="Actions for generating asserts and their IDs">
 
             <add-to-group group-id="MainMenu" anchor="last"/>
             <action id="cz.petrflajsingr.clion_plugin.assert_actions.InsertHexIdAction"
@@ -81,6 +81,9 @@
                     class="cz.petrflajsingr.clion_plugin.wrap_actions.WrapUnoptimizePragmaAction"
                     text="Disable optimization for selection"
                     description="Wrap currently selected text in pragma optimize"/>
+            <action id="cz.petrflajsingr.clion_plugin.uuid_actions.InsertUUIDAction"
+                    class="cz.petrflajsingr.clion_plugin.uuid_actions.InsertUUIDAction" text="Insert UUID"
+                    description="Inserts a random UUID at current cursor location"/>
 
         </group>
     </actions>

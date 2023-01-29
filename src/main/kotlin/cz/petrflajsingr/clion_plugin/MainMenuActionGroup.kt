@@ -5,7 +5,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.actionSystem.DefaultActionGroup
 
-class AssertActionGroup : DefaultActionGroup() {
+class MainMenuActionGroup : DefaultActionGroup() {
     // using main UI thread
     override fun getActionUpdateThread(): ActionUpdateThread {
         return ActionUpdateThread.EDT
