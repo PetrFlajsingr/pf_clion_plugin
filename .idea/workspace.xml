@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d9ec5d5-f6b4-4bf3-9596-ed784e12e283" name="Changes" comment="Move actions to appropriate packages">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/uuid_actions/InsertUUIDAction.kt" afterDir="false" />
+    <list default="true" id="0d9ec5d5-f6b4-4bf3-9596-ed784e12e283" name="Changes" comment="Add insert UUID action">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/AssertActionGroup.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/MainMenuActionGroup.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/Utils.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671273131283</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add insert UUID action">
+      <created>1674993824768</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674993824768</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -195,6 +200,7 @@
     <MESSAGE value="Add pragma optimize wrap" />
     <MESSAGE value="Rename package to `clion_plugin`" />
     <MESSAGE value="Move actions to appropriate packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move actions to appropriate packages" />
+    <MESSAGE value="Add insert UUID action" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add insert UUID action" />
   </component>
 </project>
