@@ -9,18 +9,11 @@ import com.intellij.openapi.command.WriteCommandAction
 
 abstract class InsertTextAction : AnAction {
     constructor() : super()
-
     constructor(text: String?, description: String?) : super(text, description, null)
-
     // using main UI thread
-    override fun getActionUpdateThread(): ActionUpdateThread {
-        return ActionUpdateThread.EDT
-    }
-
+    override fun getActionUpdateThread() = ActionUpdateThread.EDT
     abstract fun getTextToInsert(): String
-
     abstract fun getActionName(): String
-
     override fun actionPerformed(event: AnActionEvent) {
         val editor = event.getRequiredData(CommonDataKeys.EDITOR)
         val project = event.getRequiredData(CommonDataKeys.PROJECT)
@@ -36,7 +29,6 @@ abstract class InsertTextAction : AnAction {
                     document.insertString(caret.offset, getTextToInsert())
                 }
     }
-
     override fun update(e: AnActionEvent) {
         val project = e.project
         e.presentation.isEnabledAndVisible = project != null

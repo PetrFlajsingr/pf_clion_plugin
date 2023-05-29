@@ -2,6 +2,4 @@ package cz.petrflajsingr.clion_plugin
 
 import kotlin.random.Random
 
-fun generateRandomAssertID(): String {
-    return "0x%017X".format(Random.nextLong())
-}
+fun generateRandomAssertID() = "0x%08X".format(Random.nextInt())

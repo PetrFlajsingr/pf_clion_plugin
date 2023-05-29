@@ -10,14 +10,9 @@ import cz.petrflajsingr.clion_plugin.generateRandomAssertID
 
 class InsertHexIdAction : AnAction {
     constructor() : super()
-
     constructor(text: String?, description: String?) : super(text, description, null)
-
     // using main UI thread
-    override fun getActionUpdateThread(): ActionUpdateThread {
-        return ActionUpdateThread.EDT
-    }
-
+    override fun getActionUpdateThread() = ActionUpdateThread.EDT
     override fun actionPerformed(event: AnActionEvent) {
         val editor = event.getRequiredData(CommonDataKeys.EDITOR)
         val project = event.getRequiredData(CommonDataKeys.PROJECT)
@@ -29,10 +24,9 @@ class InsertHexIdAction : AnAction {
                 .withName("InsertID")
                 .withGlobalUndo()
                 .run<Exception> {
-                    document.insertString(caret.offset, generateRandomAssertID())
+                    document.replaceString(caret.selectionStart, caret.selectionEnd, generateRandomAssertID())
                 }
     }
-
     override fun update(e: AnActionEvent) {
         val project = e.project
         e.presentation.isEnabledAndVisible = project != null

@@ -7,9 +7,7 @@ import com.intellij.openapi.actionSystem.DefaultActionGroup
 
 class MainMenuActionGroup : DefaultActionGroup() {
     // using main UI thread
-    override fun getActionUpdateThread(): ActionUpdateThread {
-        return ActionUpdateThread.EDT
-    }
+    override fun getActionUpdateThread() = ActionUpdateThread.EDT
     override fun update(event: AnActionEvent) {
         // Enable/disable depending on whether user is editing
         val editor = event.getData(CommonDataKeys.EDITOR)

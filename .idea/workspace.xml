@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d9ec5d5-f6b4-4bf3-9596-ed784e12e283" name="Changes" comment="Add insert UUID action">
+    <list default="true" id="0d9ec5d5-f6b4-4bf3-9596-ed784e12e283" name="Changes" comment="Change assert id generation">
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertAssertParanoidAction.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertEnsureParanoidAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/MainMenuActionGroup.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/MainMenuActionGroup.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/Utils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertAssertAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertAssertAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertAssertActionBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertAssertActionBase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertDbgErrorAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertDbgErrorAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertDbgWarnAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertDbgWarnAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertEnsureAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertEnsureAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertErrorAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertErrorAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertErrorActionBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertErrorActionBase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertHexIdAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertHexIdAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertStaticAssertAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertStaticAssertAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertVerifyAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertVerifyAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertWarnAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertWarnAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/base_actions/InsertTextAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/base_actions/InsertTextAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/base_actions/WrapSelectionAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/base_actions/WrapSelectionAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/uuid_actions/InsertUUIDAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/uuid_actions/InsertUUIDAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/wrap_actions/WrapUnoptimizePragmaAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/wrap_actions/WrapUnoptimizePragmaAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,26 +78,21 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2IpAvZoCNNzY04Bfjl2akGMvtpT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="cz.petrflajsingr.assert_integration" />
@@ -84,7 +104,7 @@
       <recent name="cz.petrflajsingr.clion_plugin.base_actions" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Run Plugin">
+  <component name="RunManager" selected="Gradle.pf_assert_integration [assemble]">
     <configuration name="pf_assert_integration [assemble]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,6 +124,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="build.gradle.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
@@ -189,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674993824768</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Change assert id generation">
+      <created>1676162016136</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676162016136</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -201,6 +229,7 @@
     <MESSAGE value="Rename package to `clion_plugin`" />
     <MESSAGE value="Move actions to appropriate packages" />
     <MESSAGE value="Add insert UUID action" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add insert UUID action" />
+    <MESSAGE value="Change assert id generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change assert id generation" />
   </component>
 </project>
