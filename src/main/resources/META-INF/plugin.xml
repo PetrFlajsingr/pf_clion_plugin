@@ -31,7 +31,7 @@
 
             <add-to-group group-id="MainMenu" anchor="last"/>
             <action id="cz.petrflajsingr.clion_plugin.assert_actions.InsertHexIdAction"
-                    class="cz.petrflajsingr.clion_plugin.assert_actions.InsertHexIdAction" text="Insert ID"
+                    class="cz.petrflajsingr.clion_plugin.assert_actions.InsertHexIdAction" text="Insert random ID"
                     description="Insert hex int ID used for pf asserts">
             </action>
             <action id="cz.petrflajsingr.clion_plugin.assert_actions.InsertEnsureAction"
@@ -85,8 +85,13 @@
                     text="Disable optimization for selection"
                     description="Wrap currently selected text in pragma optimize"/>
             <action id="cz.petrflajsingr.clion_plugin.uuid_actions.InsertUUIDAction"
-                    class="cz.petrflajsingr.clion_plugin.uuid_actions.InsertUUIDAction" text="Insert UUID"
+                    class="cz.petrflajsingr.clion_plugin.uuid_actions.InsertUUIDAction" text="Insert random UUID"
                     description="Inserts a random UUID at current cursor location"/>
+            <separator/>
+            <action id="cz.petrflajsingr.clion_plugin.rtti_actions.InsertRTTIID"
+                    class="cz.petrflajsingr.clion_plugin.rtti_actions.InsertRTTIID" text="Insert random RTTI ID"
+                    description="Insert random RTTI ID">
+            </action>
 
         </group>
     </actions>

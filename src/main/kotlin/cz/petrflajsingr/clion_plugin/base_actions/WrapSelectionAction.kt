@@ -21,7 +21,6 @@ abstract class WrapSelectionAction : AnAction {
         val document = editor.document
         val caret = editor.caretModel.primaryCaret
 
-
         WriteCommandAction
             .writeCommandAction(project)
             .withName(getActionName())

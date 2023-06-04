@@ -5,30 +5,15 @@ import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.command.WriteCommandAction
+import cz.petrflajsingr.clion_plugin.base_actions.InsertOrOverwriteTextAction
 import cz.petrflajsingr.clion_plugin.generateRandomAssertID
 
 
-class InsertHexIdAction : AnAction {
+class InsertHexIdAction : InsertOrOverwriteTextAction {
     constructor() : super()
-    constructor(text: String?, description: String?) : super(text, description, null)
-    // using main UI thread
-    override fun getActionUpdateThread() = ActionUpdateThread.EDT
-    override fun actionPerformed(event: AnActionEvent) {
-        val editor = event.getRequiredData(CommonDataKeys.EDITOR)
-        val project = event.getRequiredData(CommonDataKeys.PROJECT)
-        val document = editor.document
-        val caret = editor.caretModel.primaryCaret
+    constructor(text: String?, description: String?) : super(text, description)
 
-        WriteCommandAction
-                .writeCommandAction(project)
-                .withName("InsertID")
-                .withGlobalUndo()
-                .run<Exception> {
-                    document.replaceString(caret.selectionStart, caret.selectionEnd, generateRandomAssertID())
-                }
-    }
-    override fun update(e: AnActionEvent) {
-        val project = e.project
-        e.presentation.isEnabledAndVisible = project != null
-    }
+    override fun getTextToInsert() = generateRandomAssertID()
+    override fun getActionName() = "InsertID"
+
 }
