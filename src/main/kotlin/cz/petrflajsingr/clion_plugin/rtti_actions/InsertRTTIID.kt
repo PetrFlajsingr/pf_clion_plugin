@@ -7,7 +7,7 @@ class InsertRTTIID : InsertOrOverwriteTextAction {
     constructor() : super()
     constructor(text: String?, description: String?) : super(text, description)
 
-    override fun getTextToInsert() = "InsertRTIITypeID"
+    override fun getTextToInsert() = generateRandomRTTIID()
 
-    override fun getActionName() = generateRandomRTTIID()
+    override fun getActionName() = "InsertRTIITypeID"
 }
