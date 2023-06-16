@@ -18,11 +18,14 @@
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.xdebugger</depends>
+    <depends>com.intellij.modules.cidr.debugger</depends>
+    <depends>com.intellij.modules.cidr.lang</depends>
 
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
+        <postStartupActivity implementation="cz.petrflajsingr.clion_plugin.activities.MainActivity"/>
     </extensions>
     <actions>
         <group id="cz.petrflajsingr.clion_plugin.MainMenuActionGroup"
@@ -91,6 +94,11 @@
             <action id="cz.petrflajsingr.clion_plugin.rtti_actions.InsertRTTIID"
                     class="cz.petrflajsingr.clion_plugin.rtti_actions.InsertRTTIID" text="Insert random RTTI ID"
                     description="Insert random RTTI ID">
+            </action>
+            <separator/>
+            <action id="cz.petrflajsingr.clion_plugin.debugger_actions.IgnoreBreakpointInstructionAction"
+                    class="cz.petrflajsingr.clion_plugin.debugger_actions.IgnoreBreakpointInstructionAction" text="Ignore current debug break"
+                    description="Ignore current debug break by removing its instruction">
             </action>
 
         </group>

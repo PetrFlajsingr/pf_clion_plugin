@@ -11,6 +11,7 @@ class MainMenuActionGroup : DefaultActionGroup() {
     override fun update(event: AnActionEvent) {
         // Enable/disable depending on whether user is editing
         val editor = event.getData(CommonDataKeys.EDITOR)
-        event.presentation.isEnabled = editor != null
+        //event.presentation.isEnabled = editor != null
+        event.presentation.isEnabled = true
     }
 }

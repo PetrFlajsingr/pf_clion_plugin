@@ -17,7 +17,7 @@ intellij {
     version.set("2023.1.2")
     type.set("CL") // Target IDE Platform
 
-    plugins.set(listOf(/* Plugin Dependencies */))
+    plugins.set(listOf("com.intellij.clion", "cidr-base-plugin", "c-plugin"))
 
 }
 

@@ -7,13 +7,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d9ec5d5-f6b4-4bf3-9596-ed784e12e283" name="Changes" comment="Add paranoid asserts&#10;Update required versions">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/base_actions/InsertOrOverwriteTextAction.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/rtti_actions/InsertRTTIID.kt" afterDir="false" />
+    <list default="true" id="0d9ec5d5-f6b4-4bf3-9596-ed784e12e283" name="Changes" comment="Fix function mismatch">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/DataKeys.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/activities/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/debugger/DebuggerHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/debugger/lldb/LLDBDebuggerHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/debugger_actions/IgnoreBreakpointInstructionAction.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/Utils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertHexIdAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertHexIdAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/base_actions/WrapSelectionAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/base_actions/WrapSelectionAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/MainMenuActionGroup.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/MainMenuActionGroup.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +46,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -88,7 +92,7 @@
       <recent name="cz.petrflajsingr.clion_plugin.base_actions" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.pf_assert_integration [assemble]">
+  <component name="RunManager" selected="Gradle.Run Plugin">
     <configuration name="pf_assert_integration [assemble]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -208,7 +212,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685376779161</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add action for random RTTI id generation">
+      <created>1685897276038</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685897276038</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix function mismatch">
+      <created>1685897384354</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685897384354</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -233,6 +251,8 @@
     <MESSAGE value="Add insert UUID action" />
     <MESSAGE value="Change assert id generation" />
     <MESSAGE value="Add paranoid asserts&#10;Update required versions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add paranoid asserts&#10;Update required versions" />
+    <MESSAGE value="Add action for random RTTI id generation" />
+    <MESSAGE value="Fix function mismatch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix function mismatch" />
   </component>
 </project>
