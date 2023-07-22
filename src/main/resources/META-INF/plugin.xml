@@ -100,6 +100,11 @@
                     class="cz.petrflajsingr.clion_plugin.debugger_actions.IgnoreBreakpointInstructionAction" text="Ignore current debug break"
                     description="Ignore current debug break by removing its instruction">
             </action>
+            <separator/>
+            <action id="cz.petrflajsingr.clion_plugin.speculo_actions.PauseResumeSpeculoAction"
+                    class="cz.petrflajsingr.clion_plugin.speculo_actions.PauseResumeSpeculoAction" text="Pause/resume Speculo"
+                    description="Pause or resume Speculo execution during building">
+            </action>
 
         </group>
     </actions>
