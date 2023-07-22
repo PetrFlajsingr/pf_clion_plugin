@@ -3,9 +3,9 @@ package cz.petrflajsingr.clion_plugin.base_actions
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.command.WriteCommandAction
-import cz.petrflajsingr.clion_plugin.generateRandomAssertID
+import com.intellij.openapi.project.DumbAware
 
-abstract class InsertOrOverwriteTextAction : InsertTextAction {
+abstract class InsertOrOverwriteTextAction : InsertTextAction, DumbAware {
     constructor() : super()
     constructor(text: String?, description: String?) : super(text, description)
 

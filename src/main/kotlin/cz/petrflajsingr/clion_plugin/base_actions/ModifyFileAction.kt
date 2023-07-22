@@ -3,6 +3,7 @@ package cz.petrflajsingr.clion_plugin.base_actions
 import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
+import com.intellij.openapi.project.DumbAware
 import java.io.File
 
 
@@ -10,7 +11,7 @@ enum class ModifyFileActionType {
     Create, Remove
 }
 
-abstract class ModifyFileAction : AnAction {
+abstract class ModifyFileAction : AnAction, DumbAware {
     constructor() : super()
     constructor(text: String?, description: String?) : super(text, description, null)
 

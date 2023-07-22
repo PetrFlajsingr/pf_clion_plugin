@@ -5,9 +5,10 @@ import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.command.WriteCommandAction
+import com.intellij.openapi.project.DumbAware
 
 
-abstract class InsertTextAction : AnAction {
+abstract class InsertTextAction : AnAction, DumbAware {
     constructor() : super()
     constructor(text: String?, description: String?) : super(text, description, null)
     // using main UI thread
