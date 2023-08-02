@@ -26,6 +26,7 @@
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
         <postStartupActivity implementation="cz.petrflajsingr.clion_plugin.activities.MainActivity"/>
+        <statusBarWidgetFactory id="SpeculoSB" implementation="cz.petrflajsingr.clion_plugin.status_bar.NihilStatusBarWidgetFactory"/>
     </extensions>
     <actions>
         <group id="cz.petrflajsingr.clion_plugin.MainMenuActionGroup"
