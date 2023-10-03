@@ -7,11 +7,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d9ec5d5-f6b4-4bf3-9596-ed784e12e283" name="Changes" comment="Use better default for log category warnings and errors">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/status_bar/NihilStatusBarWidgetFactory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/status_bar/SpeculoStatusBarWidget.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0d9ec5d5-f6b4-4bf3-9596-ed784e12e283" name="Changes" comment="Add Speculo status to status bar">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertEnsureParanoidAction.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertNotImplementedErrorAction.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/wrap_actions/WrapUnoptimizePragmaAction.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/DataKeys.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/DataKeys.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/MainMenuActionGroup.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/MainMenuActionGroup.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/Utils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/activities/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/activities/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertAssertAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertAssertAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertAssertActionBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertAssertActionBase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertAssertParanoidAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertAssertParanoidAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertDbgErrorAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertDbgErrorAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertDbgWarnAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertDbgWarnAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertEnsureAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertEnsureAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertEnsureParanoidAction.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertErrorAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertErrorAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertErrorActionBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertErrorActionBase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertHexIdAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertHexIdAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertStaticAssertAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertStaticAssertAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertVerifyAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertVerifyAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/assert_actions/InsertWarnAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/assert_actions/InsertWarnAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/base_actions/InsertOrOverwriteTextAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/base_actions/InsertOrOverwriteTextAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/base_actions/InsertTextAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/base_actions/InsertTextAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/base_actions/ModifyFileAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/base_actions/ModifyFileAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/base_actions/WrapSelectionAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/base_actions/WrapSelectionAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/debugger/DebuggerHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/debugger/DebuggerHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/debugger/lldb/LLDBDebuggerHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/debugger/lldb/LLDBDebuggerHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/debugger_actions/IgnoreBreakpointInstructionAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/debugger_actions/IgnoreBreakpointInstructionAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/rtti_actions/InsertRTTIID.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/rtti_actions/InsertRTTIID.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/speculo_actions/PauseResumeSpeculoAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/speculo_actions/PauseResumeSpeculoAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/status_bar/NihilStatusBarWidgetFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/status_bar/NihilStatusBarWidgetFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/status_bar/SpeculoStatusBarWidget.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/status_bar/SpeculoStatusBarWidget.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/uuid_actions/InsertUUIDAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/nihil_clion_plugin/uuid_actions/InsertUUIDAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cz/petrflajsingr/clion_plugin/wrap_actions/WrapUnoptimizePragmaAction.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +90,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2IpAvZoCNNzY04Bfjl2akGMvtpT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -87,8 +120,11 @@
       <recent name="cz.petrflajsingr.clion_plugin.assert_utils" />
       <recent name="cz.petrflajsingr.clion_plugin.base_actions" />
     </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="cz.petrflajsingr.clion_plugin.assert_actions" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.Run Plugin">
+  <component name="RunManager" selected="Gradle.pf_assert_integration [assemble]">
     <configuration name="pf_assert_integration [assemble]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -253,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690066821338</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add Speculo status to status bar">
+      <option name="closed" value="true" />
+      <created>1690994438880</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1690994438880</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -288,6 +332,7 @@
     <MESSAGE value="Add an action to pause/resume Speculo" />
     <MESSAGE value="Make actions dumb aware" />
     <MESSAGE value="Use better default for log category warnings and errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use better default for log category warnings and errors" />
+    <MESSAGE value="Add Speculo status to status bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Speculo status to status bar" />
   </component>
 </project>
