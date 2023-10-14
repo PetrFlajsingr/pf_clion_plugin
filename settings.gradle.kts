@@ -1,1 +1,1 @@
-rootProject.name = "pf_assert_integration"
+rootProject.name = "nihil_engine_utils"

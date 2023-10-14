@@ -11,9 +11,11 @@ class PauseResumeSpeculoAction : ModifyFileAction() {
 
     override val filePath: String
         get() {
-            val project = ProjectManager.getInstance().openProjects[0]
-            val projectRoot = project.basePath
-            return "$projectRoot./codegen_tool/Release/bin/pause_speculo"
+            val openProjects = ProjectManager.getInstance().openProjects
+            if (openProjects.isEmpty()) {
+                return "No open project detected"
+            }
+            return "${openProjects[0].basePath}./codegen_tool/Release/bin/pause_speculo"
         }
 
     override val actionType

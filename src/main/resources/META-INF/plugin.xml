@@ -31,7 +31,8 @@
     <actions>
         <group id="cz.petrflajsingr.nihil_clion_plugin.MainMenuActionGroup"
                class="cz.petrflajsingr.nihil_clion_plugin.MainMenuActionGroup"
-               text="NihilEngine" description="Actions for generating asserts and their IDs">
+               text="NihilEngine" description="Actions for generating asserts and their IDs"
+                popup="true">
 
             <add-to-group group-id="MainMenu" anchor="last"/>
             <action id="cz.petrflajsingr.nihil_clion_plugin.assert_actions.InsertHexIdAction"

@@ -4,8 +4,8 @@ plugins {
     id("org.jetbrains.intellij") version "1.13.3"
 }
 
-group = "cz.petrflajsingr.assert_integration"
-version = "1.0-SNAPSHOT"
+group = "cz.petrflajsingr.nihil_clion_plugin"
+version = "1.0"
 
 repositories {
     mavenCentral()
@@ -14,7 +14,7 @@ repositories {
 // Configure Gradle IntelliJ Plugin
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
-    version.set("2023.1.2")
+    version.set("2023.2.2")
     type.set("CL") // Target IDE Platform
 
     plugins.set(listOf("com.intellij.clion", "cidr-base-plugin", "c-plugin"))
